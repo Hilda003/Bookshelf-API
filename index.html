@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bookshelf API</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Bookshelf API</h1>
+    </header>
+    <div class="wrapper">
+        <div class="container bg-white" id="book">
+            <h2>Tambah Buku Baru</h2>
+            <form action="#" class="form" id="formBuku">
+                <div class="form-judul">
+                    <label for="judul">Judul Buku</label>
+                    <input type="text" name="judul" id="judulBuku" placeholder="Masukkan Judul Buku" required>
+                </div>
+                <div class="form-penulis">
+                    <label for="penulis">Penulis Buku</label>
+                    <input type="text" name="penulis" id="penulisBuku" placeholder="Masukkan Nama Penulis Buku" required>
+                </div>
+                <div class="form-tahun">
+                    <label for="tahun">Tahun Terbit</label>
+                    <input type="number" name="tahun" id="tahun" placeholder="Masukkan Tahun Terbit Buku" required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="isRead" id="isCompleted" placeholder="">
+                    <label for="isRead">Selesai Dibaca</label>
+                </div>
+                <input type="submit" value="simpan" name="kirim" class="Button">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/LocalStorage.js"></script>
+
 </body>
 </html>

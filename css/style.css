@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #005b8f;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 1rem;
+    margin: 16px;
+    background: #e7e9ffa9;
+    padding: 16px;
+ 
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 450px;
+    border-radius: 16px;
+    color: #005b8f;
+}
+
+input[type=text], input[type=number] {
+    
+    background: #F5F1FF;
+    border: 2px solid #005b8f;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+input[type=text], input[type=number], .submitButton:focus{
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-judul {
+    margin: auto 0;
+}
